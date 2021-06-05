@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VOGO</string>
+    <string name="app_desc">Google Voice加油</string>
+
+    <string-array name="scope">
+        <item>com.google.android.apps.googlevoice</item>
+    </string-array>
+</resources>
