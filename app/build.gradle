@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
 
-def getVersionCode = { -> return 2 }
-
 android {
 
     compileSdkVersion 30
@@ -10,8 +8,8 @@ android {
         //noinspection ExpiredTargetSdkVersion
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode getVersionCode()
-        versionName "1." + getVersionCode()
+        versionCode 3
+        versionName "2.0"
     }
 
     buildTypes {
