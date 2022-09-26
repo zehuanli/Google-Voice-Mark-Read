@@ -2,18 +2,16 @@ package com.upbad.apps.vogo.plugin;
 
 import android.app.Notification;
 import android.app.PendingIntent;
-import android.os.Bundle;
 import android.os.Parcelable;
 
 import java.util.ArrayList;
 
 import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 import static com.upbad.apps.vogo.util.HookParams.NOTIFICATION_BUILDER_ACTION_LIST;
-import static com.upbad.apps.vogo.util.ReflectionUtil.log;
+import static com.upbad.apps.vogo.util.LogUtil.log;
 
 public class NotificationActions implements IPlugin {
 

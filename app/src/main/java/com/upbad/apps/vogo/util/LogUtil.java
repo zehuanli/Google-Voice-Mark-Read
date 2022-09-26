@@ -4,27 +4,15 @@ package com.upbad.apps.vogo.util;
 import android.util.Log;
 import de.robv.android.xposed.XposedBridge;
 
-public final class ReflectionUtil {
-
-    private static boolean xposedExist;
-
-    static {
-        try {
-            Class.forName("de.robv.android.xposed.XposedBridge");
-            xposedExist = true;
-        } catch (ClassNotFoundException e) {
-            xposedExist = false;
-            log(e);
-        }
-    }
+public final class LogUtil {
 
     public static void log(String msg) {
         if (msg == null) {
             return;
         }
-        if (xposedExist) {
+        try {
             XposedBridge.log("[VOGO] " + msg);
-        } else {
+        } catch (Exception unused) {
             Log.i("VOGO", msg);
         }
     }
