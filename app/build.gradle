@@ -8,8 +8,8 @@ android {
         //noinspection ExpiredTargetSdkVersion
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 3
-        versionName "2.0"
+        versionCode 4
+        versionName "2.1"
     }
 
     buildTypes {
@@ -23,7 +23,6 @@ android {
 }
 
 dependencies {
-//    compileOnly files('libs/XposedBridgeApi-82.jar')
     compileOnly 'de.robv.android.xposed:api:82'
 }
 
